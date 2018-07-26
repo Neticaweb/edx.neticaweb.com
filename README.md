@@ -1,1 +1,1 @@
-# neticaweb.com
+# edx.neticaweb.com
