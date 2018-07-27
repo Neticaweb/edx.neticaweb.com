@@ -28739,7 +28739,7 @@ body.error .back-button.is-disabled {
   width          : 100%;
   padding-bottom : 10px;
   overflow       : hidden;
-  border-top     : 3px solid #0075b4 !important;
+  border-bottom  : 3px solid #0075b4;
   background     : #fff;
   box-shadow     : 0 1px 5px 0 rgba(0,0,0,0.1);
   line-height    : 1.5;
@@ -28839,6 +28839,7 @@ body.error .back-button.is-disabled {
     padding       : 7px 25px 19px;
     color         : #313131;
     border-bottom : 4px solid transparent;
+    border-top : 4px solid transparent;
     font-weight   : 400;
     cursor        : pointer;
   }
@@ -28846,11 +28847,14 @@ body.error .back-button.is-disabled {
   .global-header .nav-links .main .nav-tab a.active,
   .global-header .nav-links .main .nav-tab a:hover {
     border-bottom-color : #0075b4;
+    border-top-color: #0075b4;
     border-bottom-style : solid;
+    border-top-style : solid;
   }
 
   .global-header .nav-links .main .nav-tab a:hover {
     border-bottom-color : #0075b4;
+    border-top-color: #0075b4;
     cursor              : pointer;
   }
 
