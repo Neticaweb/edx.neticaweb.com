@@ -101,7 +101,7 @@
         % if context.get('include_language_selector', footer_language_selector_is_enabled()):
             <%include file="${static.get_template_path('widgets/footer-language-selector.html')}"/>
         % endif
-
+      </div>
         <!-- <div class="wrapper-logo">
           <p>
             <a href="/">
@@ -118,8 +118,8 @@
           </p>
         </div> -->
 
-        ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
-        <p class="copyright" style="background-color: #000; color: #fff;">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
+        <!-- ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
+        <p class="copyright" style="background-color: #000; color: #fff;">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p> -->
 
         <!-- <nav class="nav-legal" aria-label="${_('Legal')}">
           <ul>
@@ -131,7 +131,7 @@
             <li><a href="${footer['edx_org_link']['url']}">${footer['edx_org_link']['text']}</a></li>
           </ul>
         </nav> -->
-      </div>
+      <!-- </div> -->
 
       ## Please leave this link and use one of the logos provided
       ## The OpenEdX link may be hidden when this view is served
@@ -146,6 +146,9 @@
         </p>
       </div>
       % endif
+
+      ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
+      <p class="copyright" style="background-color: #000; color: #fff;">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
     </footer>
   </div>
 % endif
