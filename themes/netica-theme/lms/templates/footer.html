@@ -59,7 +59,8 @@
     </footer>
   </div>
 % else:
-  <div class="wrapper wrapper-footer" style="background-color: #7B8AD4;">
+  <div class="wrapper wrapper-footer"
+       style="background-color: #7F8BD7; height: 1.5em !important;">
     <footer id="footer-openedx" class="grid-container"
       ## When rendering the footer through the branding API,
       ## the direction may not be set on the parent element,
@@ -90,7 +91,7 @@
           <ol>
               % for item_num, link in enumerate(footer['navigation_links'], start=1):
               <li class="nav-colophon-0${item_num}">
-                <a id="${link['name']}" href="${link['url']}">${link['title']}</a>
+                <a id="${link['name']}" href="${link['url']}" style="color: #1F0400;">${link['title']}</a>
               </li>
               % endfor
           </ol>
