@@ -88,10 +88,11 @@
 
       <div class="colophon">
         <nav class="nav-colophon" aria-label="${_('About')}">
-          <ol>
+          <ol style="display: block;">
               % for item_num, link in enumerate(footer['navigation_links'], start=1):
               <li class="nav-colophon-0${item_num}">
-                <a id="${link['name']}" href="${link['url']}" style="color: #1F0400;">${link['title']}</a>
+                <a id="${link['name']}" href="${link['url']}"
+                 style="font-size: 14px; fontcolor: #1F0400;">${link['title']}</a>
               </li>
               % endfor
           </ol>
