@@ -70,7 +70,10 @@
       % endif
       style="display: grid;
              grid-auto-columns: auto;
-             grid-column-gap: 2em;"
+             grid-template-columns: 33.33%;
+             grid-column-gap: 2em;
+             padding-left: 30px;
+             padding-right: 30px;"
     >
 
       <div class="wrapper-logo" style="grid-column: 1;">
@@ -204,7 +207,7 @@
         <p>
           <a href="${footer['openedx_link']['url']}">
             <img src="${static.url("images/open_edx_logo.png")}" alt="${footer['openedx_link']['title']}"
-                 style="max-width: 100%; height: auto; line-height: 31.5px;"/>
+                 style="max-width: 100%; height: auto; padding-top: 90px;"/>
           </a>
         </p>
       </div>
@@ -218,7 +221,10 @@
        style=" color: #fff;
                font-size: 10px;
                font-family: 'Poppins', sans-serif;
-               line-height: 31.5px">
+               line-height: 31.5px;
+               padding-left: 30px;
+               padding-right: 30px;
+               font-weight: 500;">
       ${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}
     </p>
   </div>
