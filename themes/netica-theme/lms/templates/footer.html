@@ -9,8 +9,6 @@
 <% footer = get_footer(is_secure=is_secure) %>
 <%namespace name='static' file='static_content.html'/>
 
-<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-
 % if uses_bootstrap:
   <div class="container-fluid wrapper-footer" style="background-color: #7B8AD4;">
     <footer>
@@ -75,7 +73,7 @@
              grid-column-gap: 2em;"
     >
 
-      <div class="wrapper-logo">
+      <div class="wrapper-logo" style="grid-column: 1 / 2;">
         <p>
           <a href="/">
             ## The default logo is a placeholder.
@@ -105,7 +103,8 @@
 	       <h6 style="font-size: 14px;
             margin-top: 20px;
             margin-bottom: 15px;
-            color: #000 !important;">
+            color: #000 !important;
+            grid-column: 2 / 3;">
 		          <a href="#cursos" style="font-weight:bold;">Cursos</a>
 	       </h6>
 
