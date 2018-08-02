@@ -102,7 +102,12 @@
         </p>
       </div>
 
-      <div class="custom-pages-footer" style="grid-column: 2;">
+      <div class="custom-pages-footer"
+           style="grid-column: 2;
+                  display: grid;
+                  grid-auto-columns: auto;
+                  grid-column-gap: 2em;">
+
 	       <h6 style="font-size: 14px;
             margin-top: 20px;
             margin-bottom: 15px;">
@@ -110,10 +115,10 @@
                  style="font-weight:bold; color: #000; font-family: 'Poppins', sans-serif;"> Cursos </a>
 	       </h6>
 
-         <div class="col-lg-4">
+         <div class="col-lg-4" style="grid-column: 1;">
 		         <p style="line-height: 16px;">
                   <a href="#"
-                     style="color: #000; font-family: 'Poppins', sans-serif;"> Preescolar </a><br>
+                     style="color: #000; font-family: 'Poppins', sans-serif; font-weight: 500;"> Preescolar </a><br>
 			            <a href="#"
                      style="color: #000; font-family: 'Poppins', sans-serif; margin-left: 2.5em"> Robótica </a><br><br><br>
 			            <a href="#"
@@ -125,7 +130,7 @@
 		         </p>
 	       </div>
 
-         <div class="col-lg-8">
+         <div class="col-lg-8" style="grid-column: 2;">
 		         <p style="line-height: 16px;">
                   <a href="#"
                      style="color: #000; font-family: 'Poppins', sans-serif;"> Primaria intermedia </a><br>
@@ -206,12 +211,13 @@
     </footer>
   </div>
 
-  <div class="footer-legal-openedx" style="background-color: #000; height: 35px; text-align: center;">
+  <div class="footer-legal-openedx" style="background-color: #000; height: 34px;">
     ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
     <p class="copyright"
        style=" color: #fff;
                font-size: 10px;
-               font-weight: bold;">
+               font-family: 'Poppins', sans-serif;
+               line-height: 34px">
       ${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}
     </p>
   </div>
