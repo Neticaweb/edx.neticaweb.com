@@ -60,7 +60,7 @@
   </div>
 % else:
   <div class="wrapper wrapper-footer"
-       style="background-color: #7F8BD7;">
+       style="background-color: #7F8BD7;  display: grid;">
     <footer id="footer-openedx" class="grid-container"
       ## When rendering the footer through the branding API,
       ## the direction may not be set on the parent element,
@@ -84,16 +84,17 @@
             <img alt="Netica logo" src="${static.url("images/netica_logo_blanco.png")}">
           </a>
         </p>
-        <p class="custom-colonphon" style="line-height: 16px; color: #000;">
+        <p class="custom-colonphon" style="line-height: 16px; color: #000; font-weight:bold;">
           <a href="https://neticaweb.com" style="{color: #000;}:hover {color: #fff}"> Acerca de </a><br>
           <a href="https://neticaweb.com"> Contacto </a><br>
           <a href="https://neticaweb.com"> Noticias </a><br>
           <a href="https://neticaweb.com"> Política de privacidad </a><br>
-          <a href="https://neticaweb.com"> Derechos de autor </a></p>
+          <a href="https://neticaweb.com"> Derechos de autor </a>
+        </p>
       </div>
 
       <div class="custom-pages-footer">
-	       <h6 style="font-size: 11px;
+	       <h6 style="font-size: 14px;
             margin-top: 20px;
             margin-bottom: 15px;">
 		          <a href="#cursos" style="font-weight:bold;">Cursos</a>
