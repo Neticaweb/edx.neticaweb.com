@@ -71,10 +71,11 @@
         dir=${bidi}
       % endif
       style="display: grid;
-             grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));"
+             grid-auto-columns: auto;
+             grid-column-gap: 2em;"
     >
 
-      <div class="wrapper-logo" style="grid-column: 1 / 2;">
+      <div class="wrapper-logo">
         <p>
           <a href="/">
             ## The default logo is a placeholder.
@@ -100,7 +101,7 @@
         </p>
       </div>
 
-      <div class="custom-pages-footer" style="grid-column: 2 / 3;">
+      <div class="custom-pages-footer">
 	       <h6 style="font-size: 14px;
             margin-top: 20px;
             margin-bottom: 15px;
@@ -182,7 +183,7 @@
       ## through an API to partner sites (such as marketing sites or blogs),
       ## which are not technically powered by OpenEdX.
       % if not hide_openedx_link:
-      <div class="footer-about-openedx" style="grid-column: 3 / 4;">
+      <div class="custom-footer-about-openedx">
         <p>
           <a href="${footer['openedx_link']['url']}" style="line-height: 31.5px;">
             <img src="${static.url("images/open_edx_logo.png")}" alt="${footer['openedx_link']['title']}" />
@@ -193,7 +194,7 @@
     </footer>
   </div>
 
-  <div class="footer-legal-openedx" style="background-color: #000; height: 26px;">
+  <div class="footer-legal-openedx" style="background-color: #000; height: 40px;">
     ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
     <p class="copyright"
        style=" color: #fff;
