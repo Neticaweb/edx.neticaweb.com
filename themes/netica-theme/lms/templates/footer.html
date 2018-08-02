@@ -92,6 +92,33 @@
           <a href="https://neticaweb.com"> Derechos de autor </a></p>
       </div>
 
+      <div class="custom-pages-footer">
+	       <h6 style="font-size: 11px;
+            margin-top: 20px;
+            margin-bottom: 15px;">
+		          <a href="#cursos" style="font-weight:bold;">Cursos</a>
+	       </h6>
+
+         <div class="col-lg-4">
+		         <p style="line-height: 16px;"><a href="#">Preescolar</a><br>
+			            <a href="#" class="tab-space">Robótica</a><br><br><br>
+			            <a href="#">Primaria inicial</a><br>
+			            <a href="#" class="tab-space">Robótica</a><br>
+			            <a href="#" class="tab-space">Programación</a>
+		         </p>
+	       </div>
+
+         <div class="col-lg-8">
+		         <p style="line-height: 16px;"><a href="#">Primaria intermedia</a><br>
+			            <a href="#" class="tab-space">Robótica</a><br>
+			            <a href="#" class="tab-space">Programación</a><br><br>
+			            <a href="#">Secundaria / Bachillerato</a><br>
+			            <a href="#" class="tab-space">Robótica</a><br>
+			            <a href="#" class="tab-space">Programación</a>
+		         </p>
+	      </div>
+     </div>
+
       <!-- <div class="colophon">
         <nav class="nav-colophon" aria-label="${_('About')}">
           <ol style="display: block;">
@@ -157,7 +184,9 @@
 
   <div class="footer-legal-openedx">
     ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
-    <p class="copyright" style="background-color: #000; color: #fff; font-size: 13px;">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
+    <p class="copyright" style="background-color: #000; color: #fff; font-size: 10px; font-weight: bold;">
+      ${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}
+    </p>
   </div>
 % endif
 % if include_dependencies:
