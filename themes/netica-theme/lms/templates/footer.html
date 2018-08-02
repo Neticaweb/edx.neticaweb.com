@@ -70,7 +70,7 @@
       % if bidi:
         dir=${bidi}
       % endif
-      style="display: inline-grid;
+      style="display: grid;
              grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));"
     >
 
@@ -109,7 +109,8 @@
 	       </h6>
 
          <div class="col-lg-4">
-		         <p style="line-height: 16px;"><a href="#">Preescolar</a><br>
+		         <p style="line-height: 16px;">
+                  <a href="#">Preescolar</a><br>
 			            <a href="#" class="tab-space">Robótica</a><br><br><br>
 			            <a href="#">Primaria inicial</a><br>
 			            <a href="#" class="tab-space">Robótica</a><br>
@@ -118,7 +119,8 @@
 	       </div>
 
          <div class="col-lg-8">
-		         <p style="line-height: 16px;"><a href="#">Primaria intermedia</a><br>
+		         <p style="line-height: 16px; .tab-space{margin-left: 2.5em;}">
+                  <a href="#">Primaria intermedia</a><br>
 			            <a href="#" class="tab-space">Robótica</a><br>
 			            <a href="#" class="tab-space">Programación</a><br><br>
 			            <a href="#">Secundaria / Bachillerato</a><br>
@@ -191,7 +193,7 @@
     </footer>
   </div>
 
-  <div class="footer-legal-openedx" style="background-color: #000; margin-top: 2px; margin-bottom: 2px;">
+  <div class="footer-legal-openedx" style="background-color: #000; height: 26px;">
     ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
     <p class="copyright"
        style=" color: #fff;
