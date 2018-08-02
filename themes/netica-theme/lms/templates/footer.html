@@ -146,12 +146,12 @@
         </p>
       </div>
       % endif
-
-      <div class="footer-legal-openedx">
-        ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
-        <p class="copyright" style="background-color: #000; color: #fff;">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
-      </div>
     </footer>
+  </div>
+
+  <div class="footer-legal-openedx">
+    ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
+    <p class="copyright" style="background-color: #000; color: #fff;">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
   </div>
 % endif
 % if include_dependencies:
