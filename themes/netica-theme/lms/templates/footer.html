@@ -70,7 +70,8 @@
       % if bidi:
         dir=${bidi}
       % endif
-      style="display: inline-grid;"
+      style="display: inline-grid;
+             grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));"
     >
 
       <div class="wrapper-logo" style="grid-column: 1 / 2;">
@@ -190,11 +191,10 @@
     </footer>
   </div>
 
-  <div class="footer-legal-openedx" style="margin-top: 2px; margin-bottom: 2px;">
+  <div class="footer-legal-openedx" style="background-color: #000; margin-top: 2px; margin-bottom: 2px;">
     ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
     <p class="copyright"
-       style=" background-color: #000;
-               color: #fff;
+       style=" color: #fff;
                font-size: 10px;
                font-weight: bold;">
       ${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}
