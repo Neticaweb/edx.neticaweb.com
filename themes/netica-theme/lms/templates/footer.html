@@ -70,7 +70,7 @@
       % endif
     >
 
-      <div class="wrapper-logo">
+      <div class="wrapper-logo" style="grid-column: 1 / 2;">
         <p>
           <a href="/">
             ## The default logo is a placeholder.
@@ -84,8 +84,8 @@
             <img alt="Netica logo" src="${static.url("images/netica_logo_blanco.png")}">
           </a>
         </p>
-        <p class="custom-colonphon" style="line-height: 16px; color: #000; font-weight:bold;">
-          <a href="https://neticaweb.com" style="{color: #000;}:hover {color: #fff}"> Acerca de </a><br>
+        <p class="custom-colonphon" style="line-height: 14px; color: #000;">
+          <a href="neticaweb.com"> Acerca de </a><br>
           <a href="https://neticaweb.com"> Contacto </a><br>
           <a href="https://neticaweb.com"> Noticias </a><br>
           <a href="https://neticaweb.com"> Política de privacidad </a><br>
@@ -93,7 +93,7 @@
         </p>
       </div>
 
-      <div class="custom-pages-footer">
+      <div class="custom-pages-footer" style="grid-column: 2 / 3;">
 	       <h6 style="font-size: 14px;
             margin-top: 20px;
             margin-bottom: 15px;">
@@ -172,7 +172,7 @@
       ## through an API to partner sites (such as marketing sites or blogs),
       ## which are not technically powered by OpenEdX.
       % if not hide_openedx_link:
-      <div class="footer-about-openedx">
+      <div class="footer-about-openedx" style="grid-column: 3 / 4;">
         <p>
           <a href="${footer['openedx_link']['url']}" style="line-height: 31.5px;">
             <img src="${static.url("images/open_edx_logo.png")}" alt="${footer['openedx_link']['title']}" />
@@ -185,7 +185,13 @@
 
   <div class="footer-legal-openedx">
     ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
-    <p class="copyright" style="background-color: #000; color: #fff; font-size: 10px; font-weight: bold;">
+    <p class="copyright"
+       style=" background-color: #000;
+               color: #fff;
+               font-size: 10px;
+               font-weight: bold;
+               margin-top: 2px;
+               margin-bottom: 2px;">
       ${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}
     </p>
   </div>
