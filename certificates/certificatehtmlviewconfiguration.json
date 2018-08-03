@@ -1,0 +1,20 @@
+{
+   "default":{
+      "accomplishment_class_append":"accomplishment-certificate",
+      "platform_name":"Netica Robotics",
+      "logo_src":"/static/netica-theme/images/netica_logo_normal.png",
+      "logo_url":"https://www.neticaweb.com/",
+      "company_verified_certificate_url":"https://lms.neticaweb.com/verified-certificate",
+      "company_privacy_url":"https://www.neticaweb.com/politica-de-privacidad/",
+      "company_tos_url":"https://www.neticaweb.com/terminos-de-servicio/",
+      "company_about_url":"https://www.neticaweb.com/sobre-nosotros/"
+   },
+   "verified":{
+      "certificate_type":"Verified",
+      "certificate_title":"Certificado Verificado de Logro"
+   },
+   "honor":{
+      "certificate_type":"Honor Code",
+      "certificate_title":"Certificado de Logro"
+   }
+}
